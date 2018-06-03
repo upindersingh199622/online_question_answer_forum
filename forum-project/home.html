@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link  type="text/css" href="/forum-project/styles/main.css" rel="stylesheet">  
+      <style type="text/css">
+         
+
+body {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.btn-circle {a
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover {
+  color: white;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: #42DCA3;
+  border: 1px solid #42DCA3;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  border: 1px solid #42DCA3;
+  outline: none;
+  background-color: #42DCA3;
+}
+
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: black;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #mainNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: black;
+  background: url("/forum-project/styles/b.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.download-section {
+  color: white;
+  background: url("back.jpg") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+       </style>
+  	
+    </head>
+
+     <body id="page-top" c>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Quetion Answer Forum</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Us!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Have any Quetsions ? </h1>
+              <p class="intro-text">Let's discuss this with others</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    	
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Log in!</h2>
+            <p>Come and join a disscusion!! Log in if you are registered.<a href="index.php" class="btn btn-default btn-lg">Log In</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Not yet Registered ?</h2>
+          <p>Not yet registered ? The why wait register to it...</p><br>
+          <p>Click on the button to subsribe<a href="register.php" class="btn btn-default btn-lg">Subsribe</a></p>
+      	   
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Us</h2>
+            <p>Feel free to connect and subsribe you can connact us </p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://Instagram.com" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Facebook</span>
+                </a>
+              </li>
+              <!--<li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>-->
+              <li class="list-inline-item">
+                <a href="https://Instagram.com" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
